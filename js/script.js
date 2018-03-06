@@ -87,6 +87,24 @@ var userAgent = navigator.userAgent.toLowerCase(),
 $document.ready(function () {
   var isNoviBuilder = window.xMode;
 
+console.log('123');
+  $('.send-button').on('click', function (e) {
+    
+    console.log('hi');
+
+    Email.send("abhishek777sharma@gmail.com",
+"abhishek777sharma@gmail.com",
+"This is a subject",
+"this is the body",
+"smtp25.elasticemail.com",
+"abhishek777sharma@gmail.com",
+"3a73e0a3-a2b7-4da3-80de-a52e2b0e3ba9");
+
+
+
+  });
+
+
 
   /**
    * getSwiperHeight
@@ -2838,6 +2856,18 @@ $document.ready(function () {
               enabled: true
             }
           });
+          
+          angular.module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
+
+.controller('AppCtrl', function($scope) {
+  $scope.imagePath = 'img/washedout.png';
+})
+.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('dark-grey').backgroundPalette('grey').dark();
+  $mdThemingProvider.theme('dark-orange').backgroundPalette('orange').dark();
+  $mdThemingProvider.theme('dark-purple').backgroundPalette('deep-purple').dark();
+  $mdThemingProvider.theme('dark-blue').backgroundPalette('blue').dark();
+});
       }
     }
   }
