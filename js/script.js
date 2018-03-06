@@ -97,7 +97,7 @@ console.log('123');
 "Order",
 document.getElementById('form-2-name').value + ", "+ document.getElementById('form-2-last-name').value + " " + document.getElementById('form-2-email').value + " " + document.getElementById('form-2-phone').value +  " " + document.getElementById('form-2-message').value,
 "smtp25.elasticemail.com",
-"setiasidharth@gmail.com",
+"abhishek777sharma@gmail.com",
 "3a73e0a3-a2b7-4da3-80de-a52e2b0e3ba9");
   });
 
