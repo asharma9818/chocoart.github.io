@@ -90,18 +90,15 @@ $document.ready(function () {
 console.log('123');
   $('.send-button').on('click', function (e) {
     
-    console.log('hi');
+    console.log(document.getElementById('form-2-name').value);
 
     Email.send("abhishek777sharma@gmail.com",
 "abhishek777sharma@gmail.com",
-"This is a subject",
-"this is the body",
+"Order",
+document.getElementById('form-2-name').value + " "+ document.getElementById('form-2-last-name').value + " " + document.getElementById('form-2-email').value + " " + document.getElementById('form-2-phone').value +  " " + document.getElementById('form-2-message').value,
 "smtp25.elasticemail.com",
 "abhishek777sharma@gmail.com",
 "3a73e0a3-a2b7-4da3-80de-a52e2b0e3ba9");
-
-
-
   });
 
 
